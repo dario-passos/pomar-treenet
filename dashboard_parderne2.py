@@ -47,6 +47,8 @@ client = influxdb_client.InfluxDBClient(
 
 ##################### Create the Dash app #####################################
 app = dash.Dash(__name__)
+server = app.server
+
 
 ## Query the data -------------------------------------------------------------
 query_api = client.query_api()
