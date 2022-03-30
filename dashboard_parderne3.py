@@ -123,8 +123,9 @@ def serve_layout():
     return  html.Div([
                 html.Div(children=[
                     html.Img(src=app.get_asset_url('ceot-logo2.png'),
-                             style={'width':'445', 'height':'62'}),
-                    html.H2(children='Experimental Tree Orange Sensor Network (Paderne)')
+                             style={'margin-left':'15px','width':'445', 'height':'62'}),
+                    html.H2(children='Experimental Tree Orange Sensor Network (Paderne)', 
+                            style={'margin-left':'15px',})
                     ]),
                 html.Div(className='top row',
                          children=[
@@ -139,7 +140,7 @@ def serve_layout():
                                           html.P(id='texto_soil_temp',children=[])
                                        ],
                                       style={
-                                      'margin-left':'10px',
+                                      'margin-left':'30px',
                                       'width':'30%',
                                       'vertical-align':'text-top',
                                       'text-align':'left',
